@@ -16,6 +16,7 @@
 		8068390B29EDEAF200F44808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8068390929EDEAF200F44808 /* Main.storyboard */; };
 		8068390D29EDEAF200F44808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8068390C29EDEAF200F44808 /* Assets.xcassets */; };
 		8068391029EDEAF200F44808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */; };
+		807894CF29EFD484002823E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894CE29EFD484002823E7 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8068390C29EDEAF200F44808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8068390F29EDEAF200F44808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8068391129EDEAF200F44808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807894CE29EFD484002823E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		801B537F29EF52CE00E95CF0 /* ViewMdoels */ = {
+		801B537F29EF52CE00E95CF0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				801B538029EF52DF00E95CF0 /* WelcomeListViewModel.swift */,
 			);
-			path = ViewMdoels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		801B538229EF53E300E95CF0 /* Extensions */ = {
@@ -95,17 +97,74 @@
 			isa = PBXGroup;
 			children = (
 				801B538229EF53E300E95CF0 /* Extensions */,
-				801B537F29EF52CE00E95CF0 /* ViewMdoels */,
-				801B537929EF4F1A00E95CF0 /* Views */,
-				801B537829EF4F1400E95CF0 /* Models */,
-				8068390329EDEAF200F44808 /* AppDelegate.swift */,
-				8068390529EDEAF200F44808 /* SceneDelegate.swift */,
-				8068390929EDEAF200F44808 /* Main.storyboard */,
+				807894C729EFD403002823E7 /* Others */,
+				807894C829EFD41C002823E7 /* Modules */,
 				8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */,
+				8068390929EDEAF200F44808 /* Main.storyboard */,
 				8068390C29EDEAF200F44808 /* Assets.xcassets */,
 				8068391129EDEAF200F44808 /* Info.plist */,
 			);
 			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		807894C729EFD403002823E7 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8068390329EDEAF200F44808 /* AppDelegate.swift */,
+				8068390529EDEAF200F44808 /* SceneDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		807894C829EFD41C002823E7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				807894CA29EFD437002823E7 /* HomeScreen */,
+				807894C929EFD41E002823E7 /* WelcomeScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		807894C929EFD41E002823E7 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				801B537F29EF52CE00E95CF0 /* ViewModels */,
+				801B537829EF4F1400E95CF0 /* Models */,
+				801B537929EF4F1A00E95CF0 /* Views */,
+			);
+			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		807894CA29EFD437002823E7 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				807894CD29EFD44F002823E7 /* Models */,
+				807894CC29EFD449002823E7 /* ViewModels */,
+				807894CB29EFD43D002823E7 /* Views */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		807894CB29EFD43D002823E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				807894CE29EFD484002823E7 /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		807894CC29EFD449002823E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		807894CD29EFD44F002823E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +243,7 @@
 				801B537E29EF50A800E95CF0 /* WelcomeElement.swift in Sources */,
 				8068390829EDEAF200F44808 /* WelcomeViewController.swift in Sources */,
 				8068390429EDEAF200F44808 /* AppDelegate.swift in Sources */,
+				807894CF29EFD484002823E7 /* HomeViewController.swift in Sources */,
 				8068390629EDEAF200F44808 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

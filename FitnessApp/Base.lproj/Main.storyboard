@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -126,10 +127,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="-428" y="-1"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="U4N-vW-RYm">
+            <objects>
+                <viewController id="AfX-ed-hJN" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MnL-ru-aBb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6fx-gu-J8Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="ELr-iC-YZl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwp-bv-Roa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="701"/>
+        </scene>
+        <!--Exercises-->
+        <scene sceneID="iKy-iG-vVg">
+            <objects>
+                <viewController id="BTI-Pz-GQ2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUU-Ea-b8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uwN-ts-cip"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exercises" image="exercise-3" landscapeImage="exercise-3" id="w2v-vL-6rA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yan-iL-giZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="-656"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8VP-mw-Jd7">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarVC" id="CNH-Ia-Vfi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iyF-tp-Gyv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BTI-Pz-GQ2" kind="relationship" relationship="viewControllers" id="WQy-pd-8ve"/>
+                        <segue destination="AfX-ed-hJN" kind="relationship" relationship="viewControllers" id="3on-hb-Fgz"/>
+                        <segue destination="4h5-fq-wv0" kind="relationship" relationship="viewControllers" id="Fa1-CQ-juP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CX-38-hyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="-1"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ppZ-Vo-B0g">
+            <objects>
+                <viewController id="4h5-fq-wv0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kR6-J8-h8l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WPd-ql-xQs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="68k-qR-3cW">
+                        <imageReference key="image" image="healthy-food" variableValue="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffj-o3-z8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="-1"/>
         </scene>
     </scenes>
     <resources>
+        <image name="exercise-3" width="32" height="32"/>
+        <image name="healthy-food" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -35,6 +35,10 @@ class WelcomeViewController: UIViewController {
     @IBAction func nextButtonClicked(_ sender: Any) {
         if currentPage == viewModel.numberOfItems() - 1 {
             //Switch to Home Screen
+            let tabbar = storyboard?.instantiateViewController(withIdentifier: "tabBarVC") as! UITabBarController
+            tabbar.modalPresentationStyle = .fullScreen
+            tabbar.modalTransitionStyle = .flipHorizontal
+            present(tabbar, animated: true)
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
