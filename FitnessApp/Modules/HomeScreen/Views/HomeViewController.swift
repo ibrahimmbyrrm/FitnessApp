@@ -7,22 +7,40 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+protocol HomeViewProtocol {
+    func getSteps(steps : Int)
+    func getWater(water : Int)
+}
 
+class HomeViewController: UIViewController{
+
+    @IBOutlet weak var stepLabel: UILabel!
+    @IBOutlet weak var waterLabel: UILabel!
     @IBOutlet weak var recommendTableView: UITableView!
     
     let recommendListViewModel = RecommendCellViewModel()
-   
+    let healthKitViewModel : HealthViewModelOutput = HealthViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        healthKitViewModel.setDelegate(output: self)
+        healthKitViewModel.fetchData()
     }
     
-
-}
-extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
+   
     
+}
+
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource, HomeViewProtocol {
+    
+    func getSteps(steps: Int) {
+        stepLabel.changeTextAsync(text: "\(steps) / 10000")
+    }
+    
+    func getWater(water: Int) {
+        waterLabel.changeTextAsync(text: "\(water)ml / 3000ml")
+    }
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recommendListViewModel.numberOfRowsInSection()
     }

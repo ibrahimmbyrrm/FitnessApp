@@ -17,10 +17,14 @@
 		8068390D29EDEAF200F44808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8068390C29EDEAF200F44808 /* Assets.xcassets */; };
 		8068391029EDEAF200F44808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */; };
 		807894CF29EFD484002823E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894CE29EFD484002823E7 /* HomeViewController.swift */; };
-		807894D229F05CC7002823E7 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D129F05CC7002823E7 /* UIView+CornerRadius.swift */; };
+		807894D229F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D129F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift */; };
 		807894D429F0632F002823E7 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D329F0632F002823E7 /* RecommendCell.swift */; };
 		807894D629F063CE002823E7 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D529F063CE002823E7 /* RecommendModel.swift */; };
 		807894D829F06459002823E7 /* RecommendListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D729F06459002823E7 /* RecommendListViewModel.swift */; };
+		807894DA29F0B745002823E7 /* HealthKitElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894D929F0B745002823E7 /* HealthKitElement.swift */; };
+		807894DD29F0B75E002823E7 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894DC29F0B75E002823E7 /* HealthKitManager.swift */; };
+		807894DF29F0B79C002823E7 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894DE29F0B79C002823E7 /* HealthViewModel.swift */; };
+		807894E129F0C0E8002823E7 /* UILabel+AsyncText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +41,14 @@
 		8068391129EDEAF200F44808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807894CE29EFD484002823E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		807894D029F05939002823E7 /* FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessApp.entitlements; sourceTree = "<group>"; };
-		807894D129F05CC7002823E7 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		807894D129F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius+BorderWidth.swift"; sourceTree = "<group>"; };
 		807894D329F0632F002823E7 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		807894D529F063CE002823E7 /* RecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
 		807894D729F06459002823E7 /* RecommendListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewModel.swift; sourceTree = "<group>"; };
+		807894D929F0B745002823E7 /* HealthKitElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitElement.swift; sourceTree = "<group>"; };
+		807894DC29F0B75E002823E7 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		807894DE29F0B79C002823E7 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+AsyncText.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +90,8 @@
 		801B538229EF53E300E95CF0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				807894D129F05CC7002823E7 /* UIView+CornerRadius.swift */,
+				807894D129F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift */,
+				807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 		807894CA29EFD437002823E7 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				807894DB29F0B753002823E7 /* Services */,
 				807894CD29EFD44F002823E7 /* Models */,
 				807894CC29EFD449002823E7 /* ViewModels */,
 				807894CB29EFD43D002823E7 /* Views */,
@@ -169,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				807894D729F06459002823E7 /* RecommendListViewModel.swift */,
+				807894DE29F0B79C002823E7 /* HealthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -177,8 +188,17 @@
 			isa = PBXGroup;
 			children = (
 				807894D529F063CE002823E7 /* RecommendModel.swift */,
+				807894D929F0B745002823E7 /* HealthKitElement.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		807894DB29F0B753002823E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				807894DC29F0B75E002823E7 /* HealthKitManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,12 +275,16 @@
 				807894D629F063CE002823E7 /* RecommendModel.swift in Sources */,
 				807894D829F06459002823E7 /* RecommendListViewModel.swift in Sources */,
 				801B537C29EF4F6700E95CF0 /* WelcomeCell.swift in Sources */,
-				807894D229F05CC7002823E7 /* UIView+CornerRadius.swift in Sources */,
+				807894D229F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift in Sources */,
+				807894E129F0C0E8002823E7 /* UILabel+AsyncText.swift in Sources */,
 				801B538129EF52DF00E95CF0 /* WelcomeListViewModel.swift in Sources */,
 				801B537E29EF50A800E95CF0 /* WelcomeElement.swift in Sources */,
 				8068390829EDEAF200F44808 /* WelcomeViewController.swift in Sources */,
 				8068390429EDEAF200F44808 /* AppDelegate.swift in Sources */,
+				807894DF29F0B79C002823E7 /* HealthViewModel.swift in Sources */,
 				807894CF29EFD484002823E7 /* HomeViewController.swift in Sources */,
+				807894DA29F0B745002823E7 /* HealthKitElement.swift in Sources */,
+				807894DD29F0B75E002823E7 /* HealthKitManager.swift in Sources */,
 				807894D429F0632F002823E7 /* RecommendCell.swift in Sources */,
 				8068390629EDEAF200F44808 /* SceneDelegate.swift in Sources */,
 			);

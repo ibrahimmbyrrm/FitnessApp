@@ -26,13 +26,5 @@ extension UIView {
             self.layer.borderWidth = newValue
         }
     }
-    
-    @IBInspectable var bordercolor : CGColor {
-        get {
-            return self.bordercolor
-        }
-        set {
-            self.layer.borderColor = newValue
-        }
-    }
+
 }
