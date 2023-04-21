@@ -8,7 +8,25 @@
 import Foundation
 import HealthKit
 
-struct HealthKitElement {
-    let type : HKQuantityTypeIdentifier
-    let unit : HKUnit
+protocol HealthElement {
+    var type : HKQuantityTypeIdentifier {get}
+    var unit : HKUnit {get}
+}
+
+struct WaterElement : HealthElement {
+    var type : HKQuantityTypeIdentifier {
+        return .dietaryWater
+    }
+    var unit : HKUnit {
+        return HKUnit.literUnit(with: .milli)
+    }
+}
+
+struct StepElement : HealthElement {
+    var type : HKQuantityTypeIdentifier {
+        return .stepCount
+    }
+    var unit : HKUnit {
+        return HKUnit.count()
+    }
 }

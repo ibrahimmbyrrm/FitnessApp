@@ -149,14 +149,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5au-eh-Hfe">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5au-eh-Hfe">
                                         <rect key="frame" x="0.0" y="75.999999999999986" width="323" height="180.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Udp-Lq-AEh">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="180.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="180.33333333333334"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best drink is water!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p99-C0-sbw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="40.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="40.666666666666664"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40.666666666666664" id="aVM-je-WCL"/>
                                                         </constraints>
@@ -165,10 +165,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="tJL-px-gOi">
-                                                        <rect key="frame" x="0.0" y="45.666666666666686" width="160" height="70"/>
+                                                        <rect key="frame" x="0.0" y="45.666666666666686" width="159" height="70"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X / 3000ml" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UK-MH-k0R">
-                                                        <rect key="frame" x="0.0" y="120.66666666666664" width="160" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="120.66666666666664" width="159" height="20.333333333333329"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20.333333333333329" id="rA3-by-4I8"/>
                                                         </constraints>
@@ -177,21 +177,24 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-RQ-2Ky">
-                                                        <rect key="frame" x="0.0" y="146.00000000000003" width="160" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="146.00000000000003" width="159" height="34.333333333333343"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34.333333333333343" id="Rrh-sN-vtn"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Add data"/>
+                                                        <connections>
+                                                            <action selector="addData:" destination="AfX-ed-hJN" eventType="touchUpInside" id="oad-Uj-RXv"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DOh-kP-1jz">
-                                                <rect key="frame" x="163" y="0.0" width="160" height="180.33333333333334"/>
+                                                <rect key="frame" x="164" y="0.0" width="159" height="180.33333333333334"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move for your health!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-Ze-lfg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="40.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="40.666666666666664"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40.666666666666664" id="aKn-xW-fvs"/>
                                                         </constraints>
@@ -200,10 +203,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="running" translatesAutoresizingMaskIntoConstraints="NO" id="PPN-YG-E1s">
-                                                        <rect key="frame" x="0.0" y="45.666666666666686" width="160" height="70"/>
+                                                        <rect key="frame" x="0.0" y="45.666666666666686" width="159" height="70"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X / 10.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGU-XQ-wuo">
-                                                        <rect key="frame" x="0.0" y="120.66666666666664" width="160" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="120.66666666666664" width="159" height="20.333333333333329"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20.333333333333329" id="Ot9-gD-vFS"/>
                                                         </constraints>
@@ -212,12 +215,15 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSD-yf-dJ7">
-                                                        <rect key="frame" x="0.0" y="146.00000000000003" width="160" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="146.00000000000003" width="159" height="34.333333333333343"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34.333333333333343" id="wzq-eT-4Ib"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Add data"/>
+                                                        <connections>
+                                                            <action selector="addData:" destination="AfX-ed-hJN" eventType="touchUpInside" id="iWu-sZ-dcS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -306,6 +312,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="ELr-iC-YZl"/>
                     <connections>
+                        <outlet property="addStepButton" destination="RSD-yf-dJ7" id="PVn-QK-lpY"/>
+                        <outlet property="addWaterButton" destination="mrF-RQ-2Ky" id="dsN-nZ-nGD"/>
                         <outlet property="recommendTableView" destination="gnp-dT-Cfb" id="pCl-lh-Poy"/>
                         <outlet property="stepLabel" destination="bGU-XQ-wuo" id="wfT-Qq-Tps"/>
                         <outlet property="waterLabel" destination="6UK-MH-k0R" id="ecp-b6-pej"/>

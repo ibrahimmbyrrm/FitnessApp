@@ -27,7 +27,6 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         pageControl.numberOfPages = viewModel.numberOfItems()
         
     }
@@ -38,6 +37,7 @@ class WelcomeViewController: UIViewController {
             let tabbar = storyboard?.instantiateViewController(withIdentifier: "tabBarVC") as! UITabBarController
             tabbar.modalPresentationStyle = .fullScreen
             tabbar.modalTransitionStyle = .flipHorizontal
+            tabbar.selectedIndex = 1
             present(tabbar, animated: true)
         }else {
             currentPage += 1
