@@ -326,7 +326,7 @@
         <!--Exercises-->
         <scene sceneID="iKy-iG-vVg">
             <objects>
-                <viewController id="BTI-Pz-GQ2" sceneMemberID="viewController">
+                <viewController id="BTI-Pz-GQ2" customClass="ExcercisesViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LUU-Ea-b8Z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

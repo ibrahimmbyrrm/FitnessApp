@@ -25,6 +25,13 @@
 		807894DD29F0B75E002823E7 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894DC29F0B75E002823E7 /* HealthKitManager.swift */; };
 		807894DF29F0B79C002823E7 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894DE29F0B79C002823E7 /* HealthViewModel.swift */; };
 		807894E129F0C0E8002823E7 /* UILabel+AsyncText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */; };
+		807894E929F334BD002823E7 /* String+asImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894E829F334BD002823E7 /* String+asImage.swift */; };
+		807894EB29F335A3002823E7 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894EA29F335A3002823E7 /* ExerciseModel.swift */; };
+		807894EF29F3366B002823E7 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894EE29F3366B002823E7 /* FoodModel.swift */; };
+		807894F329F3375B002823E7 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F229F3375B002823E7 /* NetworkHelper.swift */; };
+		807894F529F33763002823E7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F429F33763002823E7 /* NetworkManager.swift */; };
+		807894F729F339EE002823E7 /* String+asUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F629F339EE002823E7 /* String+asUrl.swift */; };
+		807894F929F33DEE002823E7 /* ExcercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F829F33DEE002823E7 /* ExcercisesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +56,13 @@
 		807894DC29F0B75E002823E7 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		807894DE29F0B79C002823E7 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
 		807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+AsyncText.swift"; sourceTree = "<group>"; };
+		807894E829F334BD002823E7 /* String+asImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+asImage.swift"; sourceTree = "<group>"; };
+		807894EA29F335A3002823E7 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		807894EE29F3366B002823E7 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		807894F229F3375B002823E7 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		807894F429F33763002823E7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		807894F629F339EE002823E7 /* String+asUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+asUrl.swift"; sourceTree = "<group>"; };
+		807894F829F33DEE002823E7 /* ExcercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcercisesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,8 @@
 			children = (
 				807894D129F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift */,
 				807894E029F0C0E8002823E7 /* UILabel+AsyncText.swift */,
+				807894E829F334BD002823E7 /* String+asImage.swift */,
+				807894F629F339EE002823E7 /* String+asUrl.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -117,6 +133,7 @@
 			children = (
 				801B538229EF53E300E95CF0 /* Extensions */,
 				807894C729EFD403002823E7 /* Others */,
+				807894E729F33484002823E7 /* NetworkLayer */,
 				807894C829EFD41C002823E7 /* Modules */,
 				8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */,
 				8068390929EDEAF200F44808 /* Main.storyboard */,
@@ -139,6 +156,8 @@
 		807894C829EFD41C002823E7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				807894EC29F3365A002823E7 /* NutritionScreen */,
+				807894E229F33453002823E7 /* ExercisesScreen */,
 				807894CA29EFD437002823E7 /* HomeScreen */,
 				807894C929EFD41E002823E7 /* WelcomeScreen */,
 			);
@@ -199,6 +218,64 @@
 				807894DC29F0B75E002823E7 /* HealthKitManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		807894E229F33453002823E7 /* ExercisesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				807894E529F3346A002823E7 /* ViewMdoels */,
+				807894E429F33466002823E7 /* Views */,
+				807894E329F3345F002823E7 /* Models */,
+			);
+			path = ExercisesScreen;
+			sourceTree = "<group>";
+		};
+		807894E329F3345F002823E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				807894EA29F335A3002823E7 /* ExerciseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		807894E429F33466002823E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				807894F829F33DEE002823E7 /* ExcercisesViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		807894E529F3346A002823E7 /* ViewMdoels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewMdoels;
+			sourceTree = "<group>";
+		};
+		807894E729F33484002823E7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				807894F229F3375B002823E7 /* NetworkHelper.swift */,
+				807894F429F33763002823E7 /* NetworkManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		807894EC29F3365A002823E7 /* NutritionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				807894ED29F33663002823E7 /* Models */,
+			);
+			path = NutritionScreen;
+			sourceTree = "<group>";
+		};
+		807894ED29F33663002823E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				807894EE29F3366B002823E7 /* FoodModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,14 +354,21 @@
 				801B537C29EF4F6700E95CF0 /* WelcomeCell.swift in Sources */,
 				807894D229F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift in Sources */,
 				807894E129F0C0E8002823E7 /* UILabel+AsyncText.swift in Sources */,
+				807894F729F339EE002823E7 /* String+asUrl.swift in Sources */,
 				801B538129EF52DF00E95CF0 /* WelcomeListViewModel.swift in Sources */,
 				801B537E29EF50A800E95CF0 /* WelcomeElement.swift in Sources */,
 				8068390829EDEAF200F44808 /* WelcomeViewController.swift in Sources */,
+				807894EB29F335A3002823E7 /* ExerciseModel.swift in Sources */,
+				807894F929F33DEE002823E7 /* ExcercisesViewController.swift in Sources */,
+				807894F329F3375B002823E7 /* NetworkHelper.swift in Sources */,
+				807894E929F334BD002823E7 /* String+asImage.swift in Sources */,
 				8068390429EDEAF200F44808 /* AppDelegate.swift in Sources */,
+				807894F529F33763002823E7 /* NetworkManager.swift in Sources */,
 				807894DF29F0B79C002823E7 /* HealthViewModel.swift in Sources */,
 				807894CF29EFD484002823E7 /* HomeViewController.swift in Sources */,
 				807894DA29F0B745002823E7 /* HealthKitElement.swift in Sources */,
 				807894DD29F0B75E002823E7 /* HealthKitManager.swift in Sources */,
+				807894EF29F3366B002823E7 /* FoodModel.swift in Sources */,
 				807894D429F0632F002823E7 /* RecommendCell.swift in Sources */,
 				8068390629EDEAF200F44808 /* SceneDelegate.swift in Sources */,
 			);

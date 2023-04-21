@@ -53,7 +53,7 @@ struct HealthKitManager : HealthService {
                    let stepCountSample = HKQuantitySample(type: stepCountType, quantity: stepCountQuantity, start: Date(), end: Date())
                    healthStore.save(stepCountSample) { success, error in
                        if success {
-                           print("data saved")
+                           print("Data Inserted")
                        }else {
                            print(error?.localizedDescription)
                        }
