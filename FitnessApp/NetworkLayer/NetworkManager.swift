@@ -22,7 +22,7 @@ struct NetworkManager {
             let url = url.rawValue
             request = URLRequest(url: url.asURL())
         }
-        request?.allHTTPHeaderFields = NetworkHelper.shared.headers
+        request?.allHTTPHeaderFields = ["X-Api-Key" : "\(ProcessInfo.processInfo.environment["API_KEY"]!)"]
         guard let urlRequest = request else {
             completion(.failure(.invalidURL))
             return

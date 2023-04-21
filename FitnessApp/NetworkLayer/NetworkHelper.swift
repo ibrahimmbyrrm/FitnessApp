@@ -24,8 +24,3 @@ enum BaseURLS : String {
     case nutritionURL = "https://api.api-ninjas.com/v1/nutrition?query"
 }
 
-struct NetworkHelper {
-    static let shared = NetworkHelper()
-    
-    let headers = ["X-Api-Key" : "\(ProcessInfo.processInfo.environment["API_KEY"]!)"]
-}
