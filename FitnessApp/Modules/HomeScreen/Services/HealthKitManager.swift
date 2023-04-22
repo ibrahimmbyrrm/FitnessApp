@@ -55,7 +55,7 @@ struct HealthKitManager : HealthService {
                        if success {
                            print("Data Inserted")
                        }else {
-                           print(error?.localizedDescription)
+                           print(error!.localizedDescription)
                        }
                    }
 

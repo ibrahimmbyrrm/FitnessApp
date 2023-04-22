@@ -9,22 +9,29 @@ import UIKit
 
 class ExcercisesViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    let viewModel = ExerciseListViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
         // Do any additional setup after loading the view.
+        viewModel.getData(tableView: tableView)
     }
     
-    func getData() {
-        NetworkManager().fetchData(queryInput: "4 eggs", type: Food.self, url: .nutritionURL, method: .get) { response in
-            switch response {
-            case .success(let list):
-                print(list[0].calories)
-            case .failure(let error):
-                print(error.rawValue)
-            }
-        }
-    }
-    
-
 }
+extension ExcercisesViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.present(ExerciseDetail(exercise: viewModel.didSelect(index: indexPath.row)), animated: true)
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfItems()
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExerciseCell
+        let exercise = viewModel.cellForItemAt(index: indexPath.row)
+        cell.setup(exercise: exercise)
+        return cell
+    }
+}
+

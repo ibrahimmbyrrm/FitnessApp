@@ -32,6 +32,10 @@
 		807894F529F33763002823E7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F429F33763002823E7 /* NetworkManager.swift */; };
 		807894F729F339EE002823E7 /* String+asUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F629F339EE002823E7 /* String+asUrl.swift */; };
 		807894F929F33DEE002823E7 /* ExcercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894F829F33DEE002823E7 /* ExcercisesViewController.swift */; };
+		807894FD29F3EE01002823E7 /* ExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894FC29F3EE01002823E7 /* ExerciseListViewModel.swift */; };
+		807894FF29F3F18C002823E7 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894FE29F3F18C002823E7 /* ExerciseCell.swift */; };
+		8078950229F43A76002823E7 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078950029F43A76002823E7 /* ExerciseDetail.swift */; };
+		8078950329F43A76002823E7 /* ExerciseDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8078950129F43A76002823E7 /* ExerciseDetail.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		807894F429F33763002823E7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		807894F629F339EE002823E7 /* String+asUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+asUrl.swift"; sourceTree = "<group>"; };
 		807894F829F33DEE002823E7 /* ExcercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcercisesViewController.swift; sourceTree = "<group>"; };
+		807894FC29F3EE01002823E7 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
+		807894FE29F3F18C002823E7 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		8078950029F43A76002823E7 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
+		8078950129F43A76002823E7 /* ExerciseDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseDetail.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +250,9 @@
 			isa = PBXGroup;
 			children = (
 				807894F829F33DEE002823E7 /* ExcercisesViewController.swift */,
+				807894FE29F3F18C002823E7 /* ExerciseCell.swift */,
+				8078950029F43A76002823E7 /* ExerciseDetail.swift */,
+				8078950129F43A76002823E7 /* ExerciseDetail.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 		807894E529F3346A002823E7 /* ViewMdoels */ = {
 			isa = PBXGroup;
 			children = (
+				807894FC29F3EE01002823E7 /* ExerciseListViewModel.swift */,
 			);
 			path = ViewMdoels;
 			sourceTree = "<group>";
@@ -338,6 +350,7 @@
 			files = (
 				8068391029EDEAF200F44808 /* LaunchScreen.storyboard in Resources */,
 				8068390D29EDEAF200F44808 /* Assets.xcassets in Resources */,
+				8078950329F43A76002823E7 /* ExerciseDetail.xib in Resources */,
 				8068390B29EDEAF200F44808 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,11 +367,14 @@
 				801B537C29EF4F6700E95CF0 /* WelcomeCell.swift in Sources */,
 				807894D229F05CC7002823E7 /* UIView+CornerRadius+BorderWidth.swift in Sources */,
 				807894E129F0C0E8002823E7 /* UILabel+AsyncText.swift in Sources */,
+				807894FF29F3F18C002823E7 /* ExerciseCell.swift in Sources */,
+				807894FD29F3EE01002823E7 /* ExerciseListViewModel.swift in Sources */,
 				807894F729F339EE002823E7 /* String+asUrl.swift in Sources */,
 				801B538129EF52DF00E95CF0 /* WelcomeListViewModel.swift in Sources */,
 				801B537E29EF50A800E95CF0 /* WelcomeElement.swift in Sources */,
 				8068390829EDEAF200F44808 /* WelcomeViewController.swift in Sources */,
 				807894EB29F335A3002823E7 /* ExerciseModel.swift in Sources */,
+				8078950229F43A76002823E7 /* ExerciseDetail.swift in Sources */,
 				807894F929F33DEE002823E7 /* ExcercisesViewController.swift in Sources */,
 				807894F329F3375B002823E7 /* NetworkHelper.swift in Sources */,
 				807894E929F334BD002823E7 /* String+asImage.swift in Sources */,

@@ -8,9 +8,11 @@
 import Foundation
 
 struct NetworkManager {
+    
+    //This function is able to used for all api requests.Totally reusable.
     func fetchData<T : Codable>(queryInput : String?,type : T.Type, url : BaseURLS, method : HTTPMethod, completion : @escaping(Result<[T],HTTPError>)->Void) {
         var request : URLRequest?
-        
+        //Check is user using exercise api or nutrition api
         if url == .nutritionURL {
             guard let queryInput = queryInput else {return}
             let query = queryInput.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -22,6 +24,7 @@ struct NetworkManager {
             let url = url.rawValue
             request = URLRequest(url: url.asURL())
         }
+        //Insert API Key from Env
         request?.allHTTPHeaderFields = ["X-Api-Key" : "\(ProcessInfo.processInfo.environment["API_KEY"]!)"]
         guard let urlRequest = request else {
             completion(.failure(.invalidURL))
