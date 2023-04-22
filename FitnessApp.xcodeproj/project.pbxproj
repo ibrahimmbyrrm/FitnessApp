@@ -36,6 +36,8 @@
 		807894FF29F3F18C002823E7 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807894FE29F3F18C002823E7 /* ExerciseCell.swift */; };
 		8078950229F43A76002823E7 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078950029F43A76002823E7 /* ExerciseDetail.swift */; };
 		8078950329F43A76002823E7 /* ExerciseDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8078950129F43A76002823E7 /* ExerciseDetail.xib */; };
+		8078950729F45411002823E7 /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078950629F45411002823E7 /* NutritionView.swift */; };
+		8078950929F45418002823E7 /* NutritionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078950829F45418002823E7 /* NutritionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		807894FE29F3F18C002823E7 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		8078950029F43A76002823E7 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
 		8078950129F43A76002823E7 /* ExerciseDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseDetail.xib; sourceTree = "<group>"; };
+		8078950629F45411002823E7 /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
+		8078950829F45418002823E7 /* NutritionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,15 +143,11 @@
 		8068390229EDEAF200F44808 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				8078950C29F45E9D002823E7 /* Storyboards */,
 				801B538229EF53E300E95CF0 /* Extensions */,
 				807894C729EFD403002823E7 /* Others */,
 				807894E729F33484002823E7 /* NetworkLayer */,
 				807894C829EFD41C002823E7 /* Modules */,
-				8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */,
-				8068390929EDEAF200F44808 /* Main.storyboard */,
-				8068390C29EDEAF200F44808 /* Assets.xcassets */,
-				8068391129EDEAF200F44808 /* Info.plist */,
-				807894D029F05939002823E7 /* FitnessApp.entitlements */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -155,6 +155,9 @@
 		807894C729EFD403002823E7 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				807894D029F05939002823E7 /* FitnessApp.entitlements */,
+				8068391129EDEAF200F44808 /* Info.plist */,
+				8068390C29EDEAF200F44808 /* Assets.xcassets */,
 				8068390329EDEAF200F44808 /* AppDelegate.swift */,
 				8068390529EDEAF200F44808 /* SceneDelegate.swift */,
 			);
@@ -277,6 +280,8 @@
 		807894EC29F3365A002823E7 /* NutritionScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8078950529F453F2002823E7 /* ViewModels */,
+				8078950429F453F0002823E7 /* Views */,
 				807894ED29F33663002823E7 /* Models */,
 			);
 			path = NutritionScreen;
@@ -288,6 +293,31 @@
 				807894EE29F3366B002823E7 /* FoodModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8078950429F453F0002823E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8078950629F45411002823E7 /* NutritionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8078950529F453F2002823E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8078950829F45418002823E7 /* NutritionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8078950C29F45E9D002823E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8068390929EDEAF200F44808 /* Main.storyboard */,
+				8068390E29EDEAF200F44808 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +401,7 @@
 				807894FD29F3EE01002823E7 /* ExerciseListViewModel.swift in Sources */,
 				807894F729F339EE002823E7 /* String+asUrl.swift in Sources */,
 				801B538129EF52DF00E95CF0 /* WelcomeListViewModel.swift in Sources */,
+				8078950929F45418002823E7 /* NutritionViewModel.swift in Sources */,
 				801B537E29EF50A800E95CF0 /* WelcomeElement.swift in Sources */,
 				8068390829EDEAF200F44808 /* WelcomeViewController.swift in Sources */,
 				807894EB29F335A3002823E7 /* ExerciseModel.swift in Sources */,
@@ -387,6 +418,7 @@
 				807894EF29F3366B002823E7 /* FoodModel.swift in Sources */,
 				807894D429F0632F002823E7 /* RecommendCell.swift in Sources */,
 				8068390629EDEAF200F44808 /* SceneDelegate.swift in Sources */,
+				8078950729F45411002823E7 /* NutritionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,12 +563,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FitnessApp/FitnessApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FitnessApp/Others/FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -560,12 +592,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FitnessApp/FitnessApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FitnessApp/Others/FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
